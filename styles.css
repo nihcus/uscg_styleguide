@@ -1,0 +1,330 @@
+/* Use the SG-Example.png located in the /Mockup folder 
+as a guide for what you will be building */
+
+/* 
+====================================
+Sets up styles for sidebar / navigation containers
+====================================
+*/
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.sidenav {
+  background: linear-gradient(white, lightblue);
+  height: 100%;
+  position: fixed;
+  padding: 25px;
+  width: 250px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sidebar-logo {
+width: 150px;
+margin: 5px
+}
+
+.sidenav a {
+ font-family: 'Source Sans Pro', sans-serif;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+
+.flex-item {
+ background: rgba(108, 169, 226, 0.247);
+ padding: 3px;
+ width: 100%;
+ height: 35px;
+ margin-top: 20px;
+ line-height: 30px;
+ color: white;
+ font-weight: bold;
+ font-size: 17px;
+ text-align: center;
+ border-radius: 25px;
+}
+
+a {
+ color: rgb(55, 107, 155);
+  transition: color .25s;
+}
+
+a:hover {
+  color:plum;
+  font-weight:bold; 
+}
+
+.center p {
+ text-align: center; 
+}
+
+/* 
+===========================
+Sets up styles for logos 
+============================
+*/
+
+.section-logo {
+ width: 300px;
+  margin-right: 15px;
+}
+/* Style page content */
+.main {
+  margin-left: 260px; /* Same as the width of the sidebar */
+  padding: 20px;
+}
+
+/* 
+===========================
+Sets up styles for typography 
+============================
+*/
+
+/* Sets up font-face for body copy */ 
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Sets up font-face for headers */ 
+h1 {
+  font-family: 'liquor-store', sans-serif;
+  font-size: 37px;
+  margin-bottom: 10px
+}
+h2 {
+  font-family: 'liquor-store', sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 10px
+}
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px
+}
+h5{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px
+}
+h6 {
+  font-family:'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px
+}
+
+/* Sets up font-weights for headers */ 
+h1
+
+h2,
+h3 {
+  font-weight: bold;
+}
+h4 {
+  font-weight: bold;
+}
+h5 {
+  font-weight: regular;
+}
+h6 {
+  font-weight: bold;
+}
+
+.type-styles {
+  margin-top:40px;
+  margin-bottom: 30px;
+}
+
+.type-faces {
+  margin-top:40px;
+}
+
+.type-faces-01 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.type-faces-02 {
+  font-family: 'liquor-store', sans-serif;
+}
+
+/* 
+==========================
+Sets up styles for colors 
+===========================
+*/
+
+/* Makes a circle shape to serve a color box */ 
+.color-item{
+
+}
+.color-shape {
+  display: block;
+  text-align: center;
+  width: 6em;
+  height: 6em;
+  margin: 0.5em;
+  box-shadow: 0px 2px 3px rgba(131, 131, 131, 0.4);
+}
+
+/* Makes colors */ 
+.color-red {
+  background: #012878;
+}
+
+.color-orange {
+  background: #073DA2;
+}
+
+.color-yellow {
+  background: #031B48;
+}
+
+.color-green {
+  background: #212121;
+}
+
+.color-blue {
+  background: rgb(230, 0, 47);
+}
+
+.color-purple {
+  background: #AD0023;
+}
+
+.color-black {
+  background: #fdb81e;
+}
+
+.color-gray {
+  background: #fad980;
+}
+
+/* 
+===========================
+Sets up styles for button 
+============================
+*/
+
+.button button {
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.button-normal {
+  background: #012878;
+  color: rgb(255, 255, 255);
+}
+
+.button-hover {
+  background: #ffffff;
+  color: #012878;
+  border: 2px solid #012878;
+}
+
+.button-pressed,
+.button-loading {
+  background: #073DA2;
+  color:#ffffff;
+}
+
+.button-disable {
+  background: lightgray;
+  color: gray;
+}
+
+/* 
+===========================
+PSEUDO-CLASSES: VIEW SLIDES 58-63
+============================
+*/
+
+.button:hover {
+  /* color: magenta; */
+}
+
+/* 
+==========================
+Sets up styles for icons 
+===========================
+*/
+
+/* TO ADD FONT AWESOME ICONS GO TO THIS LINK AND COPY THE CSS LINK
+https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
+*/
+
+/* USPS iconography */
+.usps-icons i {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #012878;
+}
+
+.uscg-icons {
+  background: #012878;
+  height: 80px; 
+}
+.uscg-icons i {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 30px;
+  font-size: 40px;
+  color:#ffffff;
+
+/* footer iconography */
+.social-icons i {
+  font-size: 44px;
+  color: #012878;
+}
+
+.social-icons i:hover {
+  color: magenta;
+}
+
+/* 
+===========================
+Sets up styles for images 
+============================
+*/
+
+#Imagery img {
+  padding: 10px;
+}
+
+/* 
+====================================
+Sets up styles for articles
+====================================
+*/
+article {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
